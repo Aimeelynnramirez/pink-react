@@ -1,0 +1,15 @@
+// Component usage
+<Component
+	width={ 512 }   // width property
+	height={ 512 }  // height property
+/>
+
+// Component declaration
+import React from 'react';
+
+// Is a good :)
+const Component = ({ width, height }) => {
+	return (
+		<div>My size is: { width } x { height }</div>
+	);
+}

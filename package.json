@@ -9,9 +9,9 @@
     "react-toolbox": "^2.0.0-beta.12"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production",
     "dev": "webpack --mode development --module-bind js=babel-loader",
-    "build": "webpack --mode production --module-bind js=babel-loader",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },

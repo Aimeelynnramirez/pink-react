@@ -10,7 +10,8 @@
   },
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production",
+    "build": "webpack --mode production --module-bind js=babel-loader",
+    "build:prod": "webpack --mode production",
     "dev": "webpack --mode development --module-bind js=babel-loader",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

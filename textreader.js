@@ -1,6 +1,3 @@
-import React, { Component }from 'react';
-import logo from './logo.svg';
-import './App.css';
 var str = '{"languageDetection": {"documents": [{"id": "54345597-3cfc-4958-ae06-17e9072af392","detectedLanguages": [ {  "name": "English",  "iso6391Name": "en",  "score": 1.0  }  ]  }  ],  "errors": []  },"sentiment": {  "documents": [{  "id": "54345597-3cfc-4958-ae06-17e9072af392",    "score": 0.90802371501922607  }],  "errors": []},"entities": {  "documents": [  {  "id": "54345597-3cfc-4958-ae06-17e9072af392","entities": []  }],  "errors": []}}'
 try {
   var obj = JSON.parse(str);
@@ -16,21 +13,3 @@ console.log(obj2);
 } catch (ex) {
   console.error(ex);
 }
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Note:Not to Optimized yet as still building.</h1>
-        </header>
-        <p className="App-intro">
-        checkout dev tools to see <code>alt+cmd+I</code> node. 
-        </p>
-      </div>
-    );
-  }
-}
-
-export default App;

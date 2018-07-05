@@ -1,5 +1,5 @@
 {
-  "name": "sidedrawer",
+  "name": "react-template-pink",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,9 +8,7 @@
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.3.2",
     "react-scripts": "1.1.4",
-    "react-toolbox": "^2.0.0-beta.12",
-    "files": ["./src/**/*.{html,htm,css,js}"],
-    "server": { "baseDir": "./src" }
+    "react-toolbox": "^2.0.0-beta.12"
   },
   "scripts": {
     "start": "react-scripts start",

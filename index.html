@@ -23,31 +23,6 @@
 <!-- Latest compiled JavaScript -->
  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- <script type="text/javascript">
-     $(function() {
-         var params = {
-             // Request parameters
-         };
-
-         $.ajax({
-             url: "https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/languages?" + $.param(params),
-             beforeSend: function(xhrObj){
-                 // Request headers
-                 xhrObj.setRequestHeader("Content-Type","application/json");
-                 xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","{subscription key}");
-             },
-             type: "POST",
-             // Request body
-             data: "{body}",
-         })
-         .done(function(data) {
-             alert("success");
-         })
-         .fail(function() {
-             alert("error");
-         });
-     });
-
  <style>
  html{
    background-color: pink !important;

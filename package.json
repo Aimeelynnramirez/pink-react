@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^1.3.1",
+    "@material-ui/icons": "^1.1.0",
     "babel-cli": "^6.26.0",
     "react-bootstrap": "^0.32.1",
     "react-scripts": "1.1.4",
@@ -12,6 +14,7 @@
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production --module-bind js=babel-loader",
     "build:prod": "webpack --mode production",
+    "dev:build": "webpack --mode development",
     "dev": "webpack --mode development --module-bind js=babel-loader",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

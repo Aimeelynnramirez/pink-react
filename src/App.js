@@ -1,6 +1,14 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 import ReactDOM from "react-dom";
 import './App.css';
+import IconButton from '@material-ui/core/IconButton';
+import { withStyles } from '@material-ui/core/styles';
+import MenuIcon from '@material-ui/icons/Menu';
+import Button from '@material-ui/core/Button';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 // import style from "./index.css";
 
 var str = '{"languageDetection": {"documents": [{"id": "54345597-3cfc-4958-ae06-17e9072af392","detectedLanguages": [ {  "name": "English",  "iso6391Name": "en",  "score": 1.0  }  ]  }  ],  "errors": []  },"sentiment": {  "documents": [{  "id": "54345597-3cfc-4958-ae06-17e9072af392",    "score": 0.90802371501922607  }],  "errors": []},"entities": {  "documents": [  {  "id": "54345597-3cfc-4958-ae06-17e9072af392","entities": []  }],  "errors": []}}'
@@ -22,11 +30,29 @@ console.log(obj2);
 const App = () => {
   return (
     <div>
+
+    <AppBar position="static">
+         <Toolbar>
+           <IconButton color="inherit" aria-label="Menu">
+             <MenuIcon />
+           </IconButton>
+           <Typography variant="title" color="inherit">
+             Title
+           </Typography>
+           <Button color="inherit">Login</Button>
+         </Toolbar>
+       </AppBar>
+
       <p>React here!</p>
+      <Button variant="contained" color="primary">
+     Hello World
+   </Button>
+
     </div>
   );
 };
-export default App;
+
+export default  App;
 ReactDOM.render(<App />, document.getElementById("app"));
 // class App extends Component {
 //   render() {

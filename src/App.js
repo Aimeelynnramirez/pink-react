@@ -4,7 +4,6 @@ import ReactDOM from "react-dom";
 import './App.css';
 import './DetectLanguage.js';
 import './KeyPhrase.js';
-
 import SimpleAppBar from'./SimpleAppBar';
 import IconButton from '@material-ui/core/IconButton';
 import { withStyles } from '@material-ui/core/styles';
@@ -22,15 +21,37 @@ console.log('languageDetection obj:', obj.languageDetection.documents[0])
 console.log('sentiment obj:', obj.sentiment.documents[0])
  console.log('entities obj:' , obj.entities.documents);
   console.log('getting error obj for example:' , obj.entities.errors);
-var text = '{ "name":"Aimee", "birth":"1990-12-22T11:11:11.011", "city":"Boston", "phone":"401-269-1640"}';
-var obj2 = JSON.parse(text);
-obj2.birth = new Date(obj2.birth);
-console.log(obj2);
 
 } catch (ex) {
   console.error(ex);
 }
+//this is data for show-below
+try {
+var text = '{ "name":"Aimee", "birth":"1990-12-22T11:11:11.011", "city":"Boston", "phone":"401-269-1640"}';
+var text1 ='hey there is a some good tea';
+//this is data for show
+//this is data for parsing
+var example =  JSON.parse(text);
+console.log(example.name,example.birth,example.city,example.phone,'this is example of parsed data from text');
+//this is data for parsing passing the string
 
+var duck = new Date(example.birth);
+console.log(duck, 'this is example of text.birth now to example.birth of readable format');
+
+} catch (ex) {
+  console.error(ex);
+}
+//this is an example of function passing attributes through possible input of unset
+function Data(name, birth, city , phone) {
+  this.name = name;
+  this.birth = birth;
+  this.city = city;
+  this.phone = phone;
+}
+// TODO:create an input area for data to go in setting
+var data1 = new Data('Macky', '1990-12-22T11:11:11.011', 'North Providence', '100-000-2789');
+console.log(data1, 'this is my puppys name set after this.name data');
+// this now has been set to data1.name etc such as props without propstypes passing.
 const App = () => {
   return (
     <div>
@@ -46,8 +67,12 @@ const App = () => {
            <Button color="inherit">Login</Button>
          </Toolbar>
        </AppBar>
-
-      <p>React here!</p>
+       <p>Data for Applied data read:</p>
+      <p>{data1.name}</p>
+        <p>{data1.birth}</p>
+          <p>{data1.city}</p>
+            <p>{data1.phone}</p>
+                <p>{text1}</p>
       <Button variant="contained" color="primary">
      Hello World
    </Button>

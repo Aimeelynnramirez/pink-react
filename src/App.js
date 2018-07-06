@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import ReactDOM from "react-dom";
 import './App.css';
 import './DetectLanguage.js';
+import './KeyPhrase.js';
 
 import SimpleAppBar from'./SimpleAppBar';
 import IconButton from '@material-ui/core/IconButton';

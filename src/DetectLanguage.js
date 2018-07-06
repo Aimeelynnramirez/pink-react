@@ -8,7 +8,7 @@ let https = require ('https');
 
 // Replace the accessKey string value with your valid access key.
 let accessKey = 'f07f8adce2f54a24b9e2532301415909';
-
+// free key given as a process until purchase...
 // Replace or verify the region.
 
 // You must use the same region in your REST API call as you used to obtain your access keys.

@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from "react-dom";
 import './App.css';
+import './DetectLanguage.js';
+
 import SimpleAppBar from'./SimpleAppBar';
 import IconButton from '@material-ui/core/IconButton';
 import { withStyles } from '@material-ui/core/styles';

@@ -7,7 +7,7 @@ let https = require ('https');
 // **********************************************
 
 // Replace the accessKey string value with your valid access key.
-let accessKey = 'enter key here';
+let accessKey = 'f07f8adce2f54a24b9e2532301415909';
 
 // Replace or verify the region.
 
@@ -17,7 +17,7 @@ let accessKey = 'enter key here';
 
 // NOTE: Free trial access keys are generated in the westcentralus region, so if you are using
 // a free trial access key, you should not need to change this region.
-let uri = 'westus.api.cognitive.microsoft.com';
+let uri = 'southeastasia.api.cognitive.microsoft.com';
 let path = '/text/analytics/v2.0/languages';
 
 let response_handler = function (response) {

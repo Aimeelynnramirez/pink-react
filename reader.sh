@@ -1,4 +1,4 @@
 #! bash
-node DetectLanguage.js
+node src/DetectLanguage.js
 node textreader.js
-node KeyPhrase.js
+node src/KeyPhrase.js

@@ -28,7 +28,7 @@ console.log('sentiment obj:', obj.sentiment.documents[0])
 //this is data for show-below
 try {
 var text = '{ "name":"Aimee", "birth":"1990-12-22T11:11:11.011", "city":"Boston", "phone":"401-269-1640"}';
-var text1 ='hey there is a some good tea';
+var text1 ='hey there, this is some good tea!';
 //this is data for show
 //this is data for parsing
 var example =  JSON.parse(text);
@@ -47,6 +47,8 @@ function Data(name, birth, city , phone) {
   this.birth = birth;
   this.city = city;
   this.phone = phone;
+
+
 }
 // TODO:create an input area for data to go in setting
 var data1 = new Data('Macky', '1990-12-22T11:11:11.011', 'North Providence', '100-000-2789');

@@ -4,7 +4,9 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 // //
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App.test />, document.getElementById('root'));
+
+ReactDOM.render(<App />, document.getElementById('app'));
 registerServiceWorker();
 // console.log(`I'm a silly entry point`);
 

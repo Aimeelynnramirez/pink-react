@@ -1,14 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
 import ReactDOM from "react-dom";
 import './App.css';
-import './DetectLanguage.js';
-import './KeyPhrase.js';
-import SimpleAppBar from'./SimpleAppBar';
-import IconButton from '@material-ui/core/IconButton';
-import { withStyles } from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
-import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -57,33 +49,18 @@ console.log(data1, 'this is my puppys name set after this.name data');
 const App = () => {
   return (
     <div>
-
-    <AppBar position="static">
-         <Toolbar>
-           <IconButton color="inherit" aria-label="Menu">
-             <MenuIcon />
-           </IconButton>
-           <Typography variant="title" color="inherit">
-             Title
-           </Typography>
-           <Button color="inherit">Login</Button>
-         </Toolbar>
-       </AppBar>
-       <p>Data for Applied data read:</p>
-      <p>{data1.name}</p>
-        <p>{data1.birth}</p>
-          <p>{data1.city}</p>
-            <p>{data1.phone}</p>
-                <p>{text1}</p>
-      <Button variant="contained" color="primary">
-     Hello World
-   </Button>
-
+       <AppBar position="static" color="primary">
+        <Toolbar>
+          <Typography variant="title" color="inherit">
+            Title
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <p>React here!</p>
     </div>
   );
 };
-
-export default  App;
+export default App;
 ReactDOM.render(<App />, document.getElementById("app"));
 // class App extends Component {
 //   render() {

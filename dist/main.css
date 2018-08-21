@@ -3,7 +3,9 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-
+AppBar {
+  background: #ffe1f0;
+}
 .App {
   text-align: center;
 }
@@ -28,6 +30,7 @@ body {
 .App-intro {
   font-size: large;
 }
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

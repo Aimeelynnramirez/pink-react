@@ -4,7 +4,7 @@ import './App.css';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-// import style from "./index.css";
+import style from "./index.css";
 
 var str = '{"languageDetection": {"documents": [{"id": "54345597-3cfc-4958-ae06-17e9072af392","detectedLanguages": [ {  "name": "English",  "iso6391Name": "en",  "score": 1.0  }  ]  }  ],  "errors": []  },"sentiment": {  "documents": [{  "id": "54345597-3cfc-4958-ae06-17e9072af392",    "score": 0.90802371501922607  }],  "errors": []},"entities": {  "documents": [  {  "id": "54345597-3cfc-4958-ae06-17e9072af392","entities": []  }],  "errors": []}}'
 try {
@@ -49,10 +49,10 @@ console.log(data1, 'this is my puppys name set after this.name data');
 const App = () => {
   return (
     <div>
-       <AppBar position="static" color="primary">
+       <AppBar position="static" style={{backgroundColor:'pink'}}>
         <Toolbar>
           <Typography variant="title" color="inherit">
-            Title
+           Welcome to a Pink Navigation Bar.
           </Typography>
         </Toolbar>
       </AppBar>
